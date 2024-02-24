@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pravali{
+            animation-name: hello;
+           animation-duration: 2s;
+        }
+        @keyframes hello{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(260deg);}
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+       var z=document.createElement("h2")
+       document.body.appendChild(z)
+       z.innerText="yummy"
+       z.style.marginLeft="370px"
+       var y=document.createElement("img")
+       z.appendChild(y)
+      
+       z.addEventListener("click",tasty)
+     
+      function tasty(){
+        y.src="./tastyemoji.png"
+        z.replaceWith(y)
+        y.setAttribute("style","width:100px;margin-left:370px")
+        y.setAttribute("id","pravali")
+      }
+
+        var a=document.createElement("div")
+        document.body.appendChild(a)
+        a.style.width="200px"
+        a.style.height="300px"
+        a.style.border="2px groove"
+        a.style.marginLeft="320px"
+        a.style.marginTop="50px"
+
+        var b=document.createElement("div")
+        document.body.appendChild(b)
+        b.style.marginTop="50px"
+        b.style.marginLeft="170px"
+        
+
+        var imgg=document.createElement("img")
+        a.appendChild(imgg)
+       
+        
+
+        var i1=document.createElement("img")
+        b.appendChild(i1)
+        i1.src="./icecream.jpg"
+        i1.style.width="150px"
+        i1.style.padding="10px"
+        i1.addEventListener("click",one)
+
+        var i2=document.createElement("img")
+        b.appendChild(i2)
+        i2.src="./steak.jpg"
+        i2.style.width="150px"
+        i2.style.padding="10px"
+        i2.addEventListener("click",two)
+
+        var i3=document.createElement("img")
+        b.appendChild(i3)
+        i3.src="./sandwich.jpg"
+        i3.style.width="150px"
+        i3.style.padding="10px"
+        i3.addEventListener("click",three)
+
+        function one(){
+            imgg.src="./icecream.jpg"
+            imgg.style.width="200px"
+        }
+
+        function two(){
+            imgg.src="./steak.jpg"
+            imgg.style.width="200px"
+        }
+
+        function three(){
+            imgg.src="./sandwich.jpg"
+            imgg.style.width="200px"
+        }
+    </script>
+</body>
+</html>
